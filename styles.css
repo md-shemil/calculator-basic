@@ -1,0 +1,83 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;/*justify-content will make thing  horizontally aligned*/
+    align-items: center;/*make things vertically aligned*/
+    background:#ffffff;
+}
+.container{
+
+    /*border: 1px solid #717377;*/
+    background-color: #0a0a0a;
+    padding:20px; 
+    border-radius: 16px;/*to make the edge rounded*/
+
+
+}
+input{
+    width: 280px;
+    border: none;
+    padding: 24px;
+    background: transparent;
+    /* box-shadow: 0px 3px 15px rgba(84,84,84,0.1); */
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+input::placeholder{
+    width: 270px;
+    color: #ffffff;
+}
+button{
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 8px;
+    box-shadow: 0px 3px 15px rgba(84,84,84,0.1);
+    background:#383737;
+    color: #ffffff;
+    border-radius: 50%;/*50% to make it circle*/
+    cursor: pointer;
+}
+.zero{
+    width: 141px;
+    height: 60px;
+    border-radius: 30px;
+    padding-left: 26px;
+    text-align: left;
+}
+.cl1{
+    background: orange;
+    font-size: 18px;
+
+}
+.cl2{
+    background: grey;
+    color: #0a0a0a;
+}
+@media (max-width: 400px) {
+    input {
+        width: 100%;
+        font-size: 30px;
+    }
+    input::placeholder{
+        width: 90%;
+    }
+    button {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+    .zero {
+        width: 110px;
+        height: 50px;
+    }
+}
